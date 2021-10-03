@@ -14,6 +14,19 @@ class Decompose {
     console.log(`Divisores primos: ${primes}`);
     return primes;
   }
+
+  getDivisors(n) {
+    let divisors = [];
+
+    for (let i = 1; i <= n; i++) {
+      Number.isInteger(n / i) && divisors.push(i);
+    }
+
+    console.log(`Número divisores: ${divisors}`);
+    this.getPrimesFromDivisors(divisors);
+
+    return divisors;
+  }
 }
 
 module.exports = Decompose;
