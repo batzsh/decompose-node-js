@@ -7,5 +7,7 @@
     "test": "mocha ./src/tests",
     "start": "node ./src/index.js"
   },
+  "devDependencies": {
+    "mocha": "^9.1.2"
   }
 }
